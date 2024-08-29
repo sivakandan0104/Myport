@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: black;
+}
+
+/* Header Section */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.name-container {
+    text-align: left; /* Align text to the left */
+}
+
+.name-container h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+}
+
+.name-container h2 {
+    font-size: 24px;
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+nav {
+    margin-left: auto; /* Push the navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact a:visited {
+    color: rgb(29, 51, 252);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color:  #0056b3;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Project Card Styles */
+.project-card {
+    padding: 20px;
+    background-color: #e9e9e9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #0c69c7;
+    font-weight: bold;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.caption {
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left on small screens */
+    }
+
+    .name-container {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        margin-left: 0; /* Remove left margin on small screens */
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .skills-list li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .slides img {
+        width: 100%;
+    }
+}
+
+/* QA Section Styles */
+.qa-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.qa-text h3 {
+    margin-top: 20px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
